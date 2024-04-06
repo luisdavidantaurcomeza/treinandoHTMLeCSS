@@ -1,0 +1,50 @@
+﻿…or create a new repository on the command line
+echo "# teste" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:andrejs400/livro-receitas.git
+git push -u origin main
+
+
+…or push an existing repository from the command line
+git remote add origin git@github.com:andrejs400/livro-receitas.git
+git branch -M main
+git push -u origin main
+
+
+
+
+Fazer uma busca na sua origin
+
+
+comando para atualizar a main com a origin
+git fetch origin COPIAR CÓDIGO
+Após baixar as atualizações, seguir a recomendação do alerta do print que você postou, e usar o comando para integrar as mudanças remotas:
+
+
+git pull COPIAR CÓDIGO
+Enviar novamente as mudanças novamente:
+
+
+git push
+Para resolver erro de git remoto unificar o remoto com o git, isso 
+vai retirar conflitos de mensagens e commits
+git pull origin main --allow-unrelated-histories
+
+se não der certo pode substituir o que tem no seu repositorio remoto pelo local, porém vai apagar o que tem lá:
+git push -f origin master
+
+Você pode corrigir isso, busque e mesclando as alterações feitas no ramo remoto com as alterações que você fez localmente:
+
+ git fetch origin
+# Fetches updates made to an online repository
+$ git merge origin YOUR_BRANCH_NAME
+# Merges updates made online with your local work
+
+Ou você pode simplesmente usar git pullpara executar os dois comandos de uma só vez:
+
+$ git pull origin YOUR_BRANCH_NAME
+# Grabs online updates and merges them with your local work
+
