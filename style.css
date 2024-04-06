@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: #f6f6f6;
+
+
+
+
+}
+strong {
+    color: #22d4fd;
+}
+h1 {
+    font-weight: bold;
+}
+span{
+    color: purple;
+    border: 5px solid #22D4FD;
+    padding: 10px;
+}
