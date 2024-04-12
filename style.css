@@ -1,16 +1,14 @@
-*{
+*
+{
     margin: 0;
     padding: 0;
-
 
 }
 
 body {
+    height: 100vh;
     background-color: black;
     color: #f6f6f6;
-
-
-
 
 }
 .titulo-destaque {
@@ -23,4 +21,22 @@ span{
     color: purple;
     border: 5px solid #22D4FD;
     padding: 10px;
+}
+.apresentacao {
+    margin: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.apresentacao__conteudo {
+    width: 615px;
+
+}
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+}
+.apresentacao__conteudo__texto{
+    font-size: 24;
 }
